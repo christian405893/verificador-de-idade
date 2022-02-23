@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>treino script botao</title>
+
+    <style>
+
+        div#botao {
+            background: grey;
+            color: white;
+            width: 200px;
+            height: 200px;
+            text-align: center;
+            line-height: 200px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div id="botao" onmouseenter="entrar()" onclick="clicar()" onmouseout="sair()">
+        action
+    </div>
+    <script>
+        var a = window.document.getElementById('botao')
+        a.addEventListener('entrar', entrar)
+        a.addEventListener('clicar', clicar)
+        a.addEventListener('sair', sair)
+
+        function entrar() {
+            a.innerText = 'entrou'
+            a.style.background = 'yellow'
+        }
+        function clicar(){
+            a.innerText = 'clicou'
+            a.style.background = 'red'
+        }
+        function sair() {
+            a.innerText = 'saiu'
+            a.style.background = 'black'
+        }
+    </script>
+</body>
+</html>

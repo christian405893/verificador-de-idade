@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var nome = window.prompt('qual é seu nome?')
+        document.write(`Olá <strong>${nome}</strong> seu nome tem ${nome.length} letras </br>`)
+        document.write(`Olá <strong>${nome}</strong> seu nome em letras maiúsculas fica assim: ${nome.toUpperCase()} letras</br>`)
+        document.write(`Olá, <strong>${nome}</strong> seu nome em letras minuscúla fica assim: ${nome.toLowerCase()}`)
+        // usa-se: <strong></strong> para botar as letras em negrito
+        // usa-se </br> para quebra de linha e ir para a linha de baixo
+        // para criar cedulas em qlqr linguagem: n1.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})
+        // só mudando o BRL para outra cedula para mudar: n1.toLocaleString('pt-BR', {style: 'currency', currency: 'USD'})
+        // onde o n1 do n1.toStringLocale... é a variavel que vc escolhe
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: rgb(46, 57, 207);
+            color: white;
+            font: normal 25pt Arial;
+        }
+        h1 {
+            color: rgb(218, 218, 47);
+        }
+    </style>
+</head>
+<body>
+    <h1>Olá, mundo!</h1>
+    <p>Já me livrei da maldição</p>
+    <script>
+        var n1 = Number(window.prompt('Digite um número: '))
+        var n2 = Number(window.prompt('Digite outro número: '))
+        // para converter strings em numeros quebrados use Number.parseFloat(n)
+        // para converter strings em numeros inteiros use Number.parseInt(n)
+        // o window.prompt é proprio para receber strings, por isso tem que usar o Number.parseInt(n) ou o Number.parseFloat(n)
+        // para o java analisar a variavel e decidir oq usar int ou float use somente Number()
+        // para converter numeros em strings usa-se: n.toString() ou String(n)
+        // Number(n) ele escolhe qual o mlhr de acordo com o valor q ele recebeu
+        var s = n1 + n2
+        window.alert(`A soma entre ${n1} e ${n2} é igual a ${s}`)
+        // (number + number) para adição
+        // (string + string) para concatenação
+        // 'eu estou aprendendo s'
+        // 'eu estou aprendendo ' + s
+        // `eu estou aprendendo ${s}`
+        // usa template string
+
+        //formatando strings
+
+        // s.legth quantos caracteres a string tem
+        // s.toUpperCase() tudo para 'MAIÚSCULA'
+        // s.toLowerCase() tudo para 'minúscula'
+
+    </script>
+</body>
+</html>
