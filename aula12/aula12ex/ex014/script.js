@@ -11,12 +11,12 @@ var minute = data.getMinutes()
 var hora = 
 msg.innerHTML = `<p>Agora são <strong>${hora}horas e ${minute} minutos</strong></p>`
 
-if (hora >= 5 && hora < 12) {
+if (hora >= 5 && hora <= 12) {
     // Bom dia
     img.src = 'manha.jpg'
     document.body.style.background = '#e2cd9f'
     
-} else if ( hora >= 12 && hora < 18) {
+} else if ( hora > 12 && hora < 18) {
     // Boa tarde
     img.src = 'tarde.jpg'
     document.body.style.background = '#B8860B'
