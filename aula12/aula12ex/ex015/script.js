@@ -11,9 +11,10 @@ function verificar (){
         var fsex =  document.getElementsByName('radsex')
         var idade = ano - Number(fano.value)
         var genero = ''
+
         var img = document.createElement('img')
-        
         img.setAttribute('id', 'foto')
+        
         if (fsex[0].checked) {
             genero = 'Homem'
             if(idade >= 0 && idade <=15){
@@ -47,7 +48,6 @@ function verificar (){
         }
         res.style.textAling = 'center'
        res.innerHTML = `detectamos ${genero} com ${idade} anos.`
-       res.appendChild(img).style.borderRadius
-       //<img id="foto" style="border-radius: 50%" width="250" height="250"
+       res.appendChild(img)
     }
 }
